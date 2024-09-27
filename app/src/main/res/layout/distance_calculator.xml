@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CasaLocation"
+        android:layout_width="212dp"
+        android:layout_height="35dp"
+        android:text="@string/location_house" />
+
+    <EditText
+        android:id="@+id/lat1"
+        android:layout_width="wrap_content"
+        android:hint="@string/lat"
+        android:layout_height="wrap_content"
+        android:digits="-0123456789."
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/lon1"
+        android:hint="@string/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:digits="-0123456789."
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/PlazaLocation"
+        android:layout_width="212dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/location_plaza" />
+
+    <EditText
+        android:id="@+id/lat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lat"
+        android:ems="10"
+        android:digits="-0123456789."
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/lon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lon"
+        android:ems="10"
+        android:digits="-0123456789."
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="148dp"
+        android:layout_height="54dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result" />
+
+</LinearLayout>
