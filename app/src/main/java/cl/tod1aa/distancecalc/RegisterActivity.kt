@@ -33,9 +33,17 @@ class RegisterActivity : AppCompatActivity() {
         val registerButton : Button = findViewById(R.id.registerButton)
 
         registerButton.setOnClickListener {
-            //TODO: Validar los inputs antes de ejecutar la funcion
             val email = emailInput.text.toString()
             val password = passwordInput.text.toString()
+            if(email.isEmpty()){
+                Toast.makeText(baseContext, "El campo email es obligatorio", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if(password.isEmpty()){
+                Toast.makeText(baseContext, "El campo contraseña es obligatorio", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
