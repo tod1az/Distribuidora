@@ -5,5 +5,8 @@ class Converter {
         fun decimalToRadians(number : Double) :Double{
             return number * (PI/ 180)
         }
+        fun fahrenheitToCelsius(temp: Double):Double{
+            return (temp - 32) * 5/9
+        }
     }
 }

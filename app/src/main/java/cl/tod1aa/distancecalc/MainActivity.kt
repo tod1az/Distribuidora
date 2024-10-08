@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<EditText>(R.id.email)
         val password = findViewById<EditText>(R.id.password)
 
+
         register.setOnClickListener {
             val intent: Intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
@@ -64,5 +65,24 @@ class MainActivity : AppCompatActivity() {
             //TODO: Validar inputs
         login(email.text.toString(), password.text.toString() )
         }
+        val launchTemperature = findViewById<Button>(R.id.launchTemperature)
+        launchTemperature.setOnClickListener {
+            val intent: Intent = Intent(this, TemperatureActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
