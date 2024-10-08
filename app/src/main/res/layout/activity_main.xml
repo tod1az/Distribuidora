@@ -10,22 +10,21 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="208dp"
-        android:layout_height="36dp"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
         android:text="Iniciar Sesión"
         android:textAlignment="center"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="307dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="368dp"
         android:text="Ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,8 +35,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
         android:layout_marginTop="236dp"
         android:layout_marginBottom="40dp"
         android:ems="10"
@@ -51,8 +50,8 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Email"
@@ -67,14 +66,26 @@
     <Button
         android:id="@+id/loginRegisterButton"
         style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
         android:background="@android:drawable/dialog_holo_dark_frame"
         android:text="Registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641" />
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#275EB9"
+        android:text="Convertidor de temperatura"
+        android:textColor="#FDFDFD"
+        app:iconTint="#A7FFEB"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="593dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
