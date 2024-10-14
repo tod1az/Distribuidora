@@ -32,12 +32,11 @@ class CalculatorTest {
         assertEquals(0, result2)
 
         val result3 = Calculator.deliveryPrice(price2, distance2)
-        var expected = 19.0.roundToInt() * 150
+        var expected = distance2.roundToInt()* 150
         assertEquals(expected, result3)
 
-
         val result4 = Calculator.deliveryPrice(price3, distance2)
-         expected = 19.0.roundToInt() * 300
+         expected =distance2.roundToInt() * 300
         assertEquals(expected, result4)
     }
 }

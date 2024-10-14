@@ -79,13 +79,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.isMyLocationEnabled = true
         val locationListener =  LocationListener {location ->
             Log.d("DEBUG", "onLocationChanged: ${location.toString()}")
-            val  latlngLocation =LatLng(location.latitude, location.longitude)
+            val  latlngLocation = LatLng(location.latitude, location.longitude)
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latlngLocation, 10f))
-
-           user?.uid.let{uid ->
-               val myRef = database.getReference("Locations")
-               myRef.child(uid as String).setValue(latlngLocation)
-           }
         }
         this.locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 1f , locationListener)
     }

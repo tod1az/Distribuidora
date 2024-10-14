@@ -55,6 +55,7 @@ class CalculatePrice : AppCompatActivity() {
         val factoryLatLng = LatLng(-33.0467859249662, -71.34927253478003)
         factoryLat.text = factoryLatLng.latitude.toString()
         factoryLong.text = factoryLatLng.longitude.toString()
+
         var clientLatLng= LatLng(0.0 , 0.0)
 
         saveTotalButton.setOnClickListener {
