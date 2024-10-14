@@ -17,6 +17,12 @@
         android:theme="@style/Theme.DistanceCalc"
         tools:targetApi="31">
         <activity
+            android:name=".CalculatePrice"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".TemperatureActivity"
             android:exported="false" />
         <activity

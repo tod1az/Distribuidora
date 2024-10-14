@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="cl.tod1aa.distancecalc" />
-                  <option name="mobileSdkAppId" value="1:946547302681:android:73eed47bb0b762b1d6a588" />
-                  <option name="projectId" value="food-dist-4bcd4" />
-                  <option name="projectNumber" value="946547302681" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
